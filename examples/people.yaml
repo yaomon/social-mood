@@ -1,0 +1,20 @@
+# Who to listen for, and where. Used by: python -m socialmood collect examples/people.yaml
+db: mood.sqlite
+
+people:
+  - name: Taylor Swift
+  - name: Sabrina Carpenter
+  - name: Ken Paxton
+    topic: senate-tx          # rows about a person with a topic are scored with the politics questions
+  - name: James Talarico
+    topic: senate-tx
+  - name: Democrats
+    topic: congress
+  - name: Republicans
+    topic: congress
+
+# Reddit only (read-only): newest comments here are kept when they name someone above.
+subreddits: [popheads, Music, texas, Austin, politics, Conservative, moderatepolitics]
+
+# YouTube only (needs YOUTUBE_API_KEY): [video id, who it's about]
+youtube_videos: []
